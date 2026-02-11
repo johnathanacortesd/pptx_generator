@@ -71,7 +71,7 @@ def check_password():
 
     st.markdown("""
     <div style="background:linear-gradient(135deg,#8B0000,#111827);color:white;padding:28px;border-radius:14px;margin-bottom:22px;text-align:center">
-        <h1 style="margin:0">🤖📊 Kreab Intelligence</h1>
+        <h1 style="margin:0">🤖📊 PPTX_JC Intelligence</h1>
         <p style="margin:5px 0 0;opacity:0.9">Acceso restringido</p>
     </div>
     """, unsafe_allow_html=True)
@@ -817,7 +817,7 @@ def procesar_datos(uploaded_file):
 
 def run_app():
     with st.sidebar:
-        st.markdown("### 🤖📊 Kreab Intelligence")
+        st.markdown("### 🤖📊 PPTX JC Intelligence")
         st.markdown("---")
         uploaded_file = st.file_uploader("📂 Sube tu Excel", type=['xlsx','xls'])
         st.markdown("---")
