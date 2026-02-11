@@ -7,7 +7,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Kreab - Inteligencia Electoral",
-    page_icon="🤖📊",
+    page_icon="🗳️📊",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -71,7 +71,7 @@ def check_password():
 
     st.markdown("""
     <div style="background:linear-gradient(135deg,#8B0000,#111827);color:white;padding:28px;border-radius:14px;margin-bottom:22px;text-align:center">
-        <h1 style="margin:0">🤖📊 PPTX_JC Intelligence</h1>
+        <h1 style="margin:0">🗳️📊 PPTX_JC Intelligence</h1>
         <p style="margin:5px 0 0;opacity:0.9">Acceso restringido</p>
     </div>
     """, unsafe_allow_html=True)
