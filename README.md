@@ -9,12 +9,16 @@
 
 ---
 
-## 🌐 Demo en Vivo
+<div align="center">
 
-<!-- Reemplaza esta URL con la de tu app desplegada en Streamlit Cloud -->
-> 🔗 **[Acceder a la aplicación]([https://tu-app.streamlit.app](https://pptx-generator-jc.streamlit.app))**
->
-> *Acceso protegido por contraseña. Contactar al administrador para credenciales.*
+<br>
+
+[![Streamlit App](https://img.shields.io/badge/🚀_ABRIR_APLICACIÓN-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)]([https://tu-app.streamlit.app](https://pptx-generator-jc.streamlit.app)
+
+<br>
+<p><em>Acceso protegido por contraseña. Contactar al administrador para credenciales.</em></p>
+
+</div>
 
 ---
 
