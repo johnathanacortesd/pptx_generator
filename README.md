@@ -1,6 +1,3 @@
-Aquí tienes el archivo `README.md` completo, adaptado con el nuevo nombre, el autor correcto y la eliminación de referencias al cliente anterior. También he integrado la sección técnica sobre el tamaño de fuentes en los grafos.
-
-```markdown
 # 🗳️ Inteligencia Electoral - Análisis de Redes y Narrativas PPTX_Generator_JC
 
 **ANÁLISIS DE DATOS ELECTORALES** — Plataforma de análisis automatizado de narrativas para elecciones y política.
