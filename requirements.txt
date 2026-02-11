@@ -1,0 +1,14 @@
+streamlit
+pandas
+plotly
+networkx
+numpy
+openpyxl
+jinja2
+unidecode
+wordcloud
+matplotlib
+pillow
+openai
+python-pptx
+kaleido==0.2.1
