@@ -1,6 +1,6 @@
 # 🤖📊 🗳️📊 Inteligencia Electoral - Suite de Inteligencia Electoral
 
-**Análisis de Redes y Narrativas PPTX_Generator_JC ** — Plataforma de análisis automatizado de narrativas electorales.
+**Análisis de Redes y Narrativas PPTX_Generator_JC** — Plataforma de análisis automatizado de narrativas electorales.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B?logo=streamlit&logoColor=white)
