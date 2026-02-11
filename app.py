@@ -831,7 +831,7 @@ def run_app():
     st.markdown("""
     <div style="background:linear-gradient(135deg,#8B0000,#111827);color:white;padding:28px;border-radius:14px;margin-bottom:22px">
         <h1 style="margin:0">🗳️📊 Inteligencia Electoral</h1>
-        <p style="margin:5px 0 0;opacity:0.9">Análisis de Redes y Narrativas_pptx generator_jc 🗳️😺</p>
+        <p style="margin:5px 0 0;opacity:0.9">Análisis de Redes y Narrativas PPTX_Generator_JC 🗳️😺</p>
     </div>
     """, unsafe_allow_html=True)
 
