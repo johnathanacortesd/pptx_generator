@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4.1-412991?logo=openai&logoColor=white)](https://openai.com)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4.1_nano-412991?logo=openai&logoColor=white)](https://openai.com)
 [![License](https://img.shields.io/badge/License-Proprietary-red)](#-licencia)
 
 ---
@@ -38,7 +38,7 @@ La herramienta transforma datos crudos en insights estratégicos mediante:
 | Módulo | Descripción |
 |--------|-------------|
 | 📊 **KPIs por Candidato** | Menciones, alcance total y autores únicos, ordenados por volumen de conversación. |
-| 📌 **Ejes Temáticos (IA)** | Top 5 temas específicos por candidato identificados con GPT-4.1, con detección automática de temas compartidos. |
+| 📌 **Ejes Temáticos (IA)** | Top 5 temas específicos por candidato identificados con GPT-4.1 nano, con detección automática de temas compartidos. |
 | 🕸️ **Red de Narrativas** | Grafo interactivo con layout ForceAtlas, anti-superposición de etiquetas, nodos centrales conectados a palabras clave y autores. |
 | 🔄 **Narrativas Compartidas** | Red inversa que muestra términos y hashtags compartidos entre múltiples candidatos. |
 | ☁️ **Nubes de Palabras** | Generadas por candidato con colores temáticos, exclusión inteligente de nombres propios y normalización lingüística. |
@@ -52,7 +52,7 @@ La herramienta transforma datos crudos en insights estratégicos mediante:
 
 ```
 ┌──────────────────────────────────────────────────────┐
-│                   STREAMLIT APP                       │
+│                   STREAMLIT APP                      │
 │                                                      │
 │  ┌────────────┐   ┌───────────┐   ┌───────────────┐  │
 │  │  Auth Gate │ → │ File      │ → │  Processing   │  │
@@ -62,11 +62,11 @@ La herramienta transforma datos crudos en insights estratégicos mediante:
 │         ┌─────────────┬───────────┬───────┤          │
 │         │             │           │       │          │
 │         ▼             ▼           ▼       ▼          │
-│  ┌────────────┐ ┌──────────┐ ┌────────┐ ┌────────┐  │
-│  │  OpenAI    │ │ForceAtlas│ │ Word   │ │  KPIs  │  │
-│  │  GPT-4.1   │ │ Layout   │ │ Clouds │ │ Engine │  │
-│  │  (Temas)   │ │ (Grafos) │ │        │ │        │  │
-│  └─────┬──────┘ └────┬─────┘ └───┬────┘ └───┬────┘  │
+│  ┌────────────┐ ┌──────────┐ ┌────────┐ ┌────────┐   │
+│  │  OpenAI    │ │ForceAtlas│ │ Word   │ │  KPIs  │   │
+│  │  GPT-4.1   │ │ Layout   │ │ Clouds │ │ Engine │   │
+│  │  (Temas)   │ │ (Grafos) │ │        │ │        │   │
+│  └─────┬──────┘ └────┬─────┘ └───┬────┘ └───┬────┘   │
 │        │             │           │           │       │
 │        ▼             ▼           ▼           ▼       │
 │  ┌─────────────────────────────────────────────────┐ │
@@ -74,10 +74,10 @@ La herramienta transforma datos crudos en insights estratégicos mediante:
 │  │  Resultados persistidos durante la sesión       │ │
 │  └──────────┬──────────────────┬───────────────────┘ │
 │             │                  │                     │
-│        ┌────▼─────┐     ┌─────▼──────┐              │
-│        │  HTML    │     │  PowerPoint│              │
-│        │ Interac. │     │  5 Slides  │              │
-│        └──────────┘     └────────────┘              │
+│        ┌────▼─────┐     ┌─────▼──────┐               │
+│        │  HTML    │     │  PowerPoint│               │
+│        │ Interac. │     │  5 Slides  │               │
+│        └──────────┘     └────────────┘               │
 └──────────────────────────────────────────────────────┘
 ```
 
