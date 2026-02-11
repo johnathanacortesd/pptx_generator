@@ -495,7 +495,7 @@ def crear_red_principal(df_exploded):
     cx,cy,ct,cc=[],[],[],[]
     for n,d in G.nodes(data=True):
         if d.get('type')=='candidato':cx.append(pos[n][0]);cy.append(pos[n][1]);ct.append(d.get('label',n));cc.append(d.get('color','#333'))
-    fig.add_trace(go.Scatter(x=cx,y=cy,mode='markers+text',marker=dict(size=58,color=cc,line=dict(width=4,color='white')),text=ct,textposition='bottom center',textfont=dict(color='black',size=17,family='Segoe UI, Arial Black'),hoverinfo='none',showlegend=False))
+    fig.add_trace(go.Scatter(x=cx,y=cy,mode='markers+text',marker=dict(size=58,color=cc,line=dict(width=4,color='white')),text=ct,textposition='bottom center',textfont=dict(color='black',size=18,family='Segoe UI, Arial Black'),hoverinfo='none',showlegend=False))
     wx,wy,ws,wc,wh,wsym=[],[],[],[],[],[]
     for n,d in G.nodes(data=True):
         t=d.get('type')
@@ -546,7 +546,7 @@ def crear_red_inversa_gephi(df_exploded):
     fig.add_trace(go.Scatter(x=wx,y=wy,mode='markers',marker=dict(size=ws,color='#555',line=dict(width=1,color='white')),hovertemplate="%{hovertext}<extra></extra>",hovertext=wh,showlegend=False))
     annotations=[]
     for n,d in G.nodes(data=True):
-        if d['type']=='palabra':annotations.append(dict(x=pos[n][0],y=pos[n][1],text=f"<b>{d['label']}</b>",font=dict(color='white',size=13,family='Segoe UI, Arial'),bgcolor="rgba(0,0,0,0.85)",bordercolor='#666',borderwidth=1,borderpad=2,opacity=1,showarrow=False))
+        if d['type']=='palabra':annotations.append(dict(x=pos[n][0],y=pos[n][1],text=f"<b>{d['label']}</b>",font=dict(color='white',size=15,family='Segoe UI, Arial'),bgcolor="rgba(0,0,0,0.85)",bordercolor='#666',borderwidth=1,borderpad=2,opacity=1,showarrow=False))
     xs=[p[0] for p in pos.values()];ys=[p[1] for p in pos.values()];pad=7
     fig.update_layout(annotations=annotations,showlegend=False,plot_bgcolor='white',margin=dict(t=20,b=20,l=20,r=20),xaxis=dict(visible=False,range=[min(xs)-pad,max(xs)+pad]),yaxis=dict(visible=False,range=[min(ys)-pad,max(ys)+pad]),height=900)
     return fig,G,pos
@@ -558,8 +558,8 @@ def renderizar_red_matplotlib(G, pos, titulo="Red", width_in=18, height_in=10):
     for n,d in G.nodes(data=True):
         if n not in pos:continue
         x,y=pos[n];t=d.get('type','palabra');color=d.get('color','#555555');w=float(d.get('weight',1) or 1);label=str(d.get('label',n))
-        if t=='candidato':ax.scatter(x,y,c=color,s=800,zorder=5,edgecolors='white',linewidths=3);ax.annotate(label,(x,y),fontsize=15,fontweight='bold',ha='center',va='top',xytext=(0,-22),textcoords='offset points',color='black',zorder=6)
-        elif t=='autor':ax.scatter(x,y,c=color,s=80+10*math.log1p(w),zorder=3,edgecolors='white',linewidths=1,marker='D');ax.annotate(label,(x,y),fontsize=11,ha='center',va='center',bbox=dict(boxstyle='round,pad=0.15',facecolor='black',alpha=0.8,edgecolor=color,linewidth=0.5),color='white',zorder=4)
+        if t=='candidato':ax.scatter(x,y,c=color,s=800,zorder=5,edgecolors='white',linewidths=3);ax.annotate(label,(x,y),fontsize=16,fontweight='bold',ha='center',va='top',xytext=(0,-22),textcoords='offset points',color='black',zorder=6)
+        elif t=='autor':ax.scatter(x,y,c=color,s=80+10*math.log1p(w),zorder=3,edgecolors='white',linewidths=1,marker='D');ax.annotate(label,(x,y),fontsize=13,ha='center',va='center',bbox=dict(boxstyle='round,pad=0.15',facecolor='black',alpha=0.8,edgecolor=color,linewidth=0.5),color='white',zorder=4)
         else:ax.scatter(x,y,c=color,s=60+12*math.log1p(w),zorder=3,edgecolors='white',linewidths=1);ax.annotate(label,(x,y),fontsize=12,ha='center',va='center',bbox=dict(boxstyle='round,pad=0.15',facecolor='black',alpha=0.85,edgecolor=color,linewidth=0.5),color='white',zorder=4)
     ax.axis('off');ax.set_aspect('equal',adjustable='datalim');plt.tight_layout(pad=0.3)
     buf=io.BytesIO();plt.savefig(buf,format='png',dpi=150,bbox_inches='tight',facecolor='white',edgecolor='none');plt.close(fig);buf.seek(0);return buf.read()
@@ -830,8 +830,8 @@ def run_app():
 
     st.markdown("""
     <div style="background:linear-gradient(135deg,#8B0000,#111827);color:white;padding:28px;border-radius:14px;margin-bottom:22px">
-        <h1 style="margin:0">🤖📊 Inteligencia Electoral #ColombiaDecide2026</h1>
-        <p style="margin:5px 0 0;opacity:0.9">KREAB COLOMBIA - Análisis de Redes y Narrativas</p>
+        <h1 style="margin:0">🤖📊 Inteligencia Electoral</h1>
+        <p style="margin:5px 0 0;opacity:0.9">Análisis de Redes y Narrativas_pptx generator_jc 🤖😺</p>
     </div>
     """, unsafe_allow_html=True)
 
