@@ -13,7 +13,7 @@
 
 <br>
 
-[![Streamlit App](https://img.shields.io/badge/🚀_ABRIR_APLICACIÓN-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)]([https://tu-app.streamlit.app](https://pptx-generator-jc.streamlit.app)
+[![Streamlit App](https://img.shields.io/badge/🚀_ABRIR_APLICACIÓN-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://pptx-generator-jc.streamlit.app/)
 
 <br>
 <p><em>Acceso protegido por contraseña. Contactar al administrador para credenciales.</em></p>
@@ -227,7 +227,7 @@ CANDIDATOS_CONFIG = {
 ## 📄 Licencia
 
 ```
-© 2025 Johnathan Cortés. Todos los derechos reservados.
+© 2026 Johnathan Cortés. Todos los derechos reservados.
 
 Este software es propiedad intelectual de Johnathan Cortés.
 Se proporciona bajo licencia para uso profesional. Queda prohibida
@@ -246,6 +246,6 @@ su reproducción, distribución o uso no autorizado sin permiso expreso.
 
 <br>
 
-© 2025 Johnathan Cortés 🇨🇴
+© 2026 Johnathan Cortés 🇨🇴
 
 </div>
