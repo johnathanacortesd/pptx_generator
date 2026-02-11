@@ -558,9 +558,9 @@ def renderizar_red_matplotlib(G, pos, titulo="Red", width_in=18, height_in=10):
     for n,d in G.nodes(data=True):
         if n not in pos:continue
         x,y=pos[n];t=d.get('type','palabra');color=d.get('color','#555555');w=float(d.get('weight',1) or 1);label=str(d.get('label',n))
-        if t=='candidato':ax.scatter(x,y,c=color,s=800,zorder=5,edgecolors='white',linewidths=3);ax.annotate(label,(x,y),fontsize=16,fontweight='bold',ha='center',va='top',xytext=(0,-22),textcoords='offset points',color='black',zorder=6)
-        elif t=='autor':ax.scatter(x,y,c=color,s=80+10*math.log1p(w),zorder=3,edgecolors='white',linewidths=1,marker='D');ax.annotate(label,(x,y),fontsize=13,ha='center',va='center',bbox=dict(boxstyle='round,pad=0.15',facecolor='black',alpha=0.8,edgecolor=color,linewidth=0.5),color='white',zorder=4)
-        else:ax.scatter(x,y,c=color,s=60+12*math.log1p(w),zorder=3,edgecolors='white',linewidths=1);ax.annotate(label,(x,y),fontsize=12,ha='center',va='center',bbox=dict(boxstyle='round,pad=0.15',facecolor='black',alpha=0.85,edgecolor=color,linewidth=0.5),color='white',zorder=4)
+        if t=='candidato':ax.scatter(x,y,c=color,s=800,zorder=5,edgecolors='white',linewidths=3);ax.annotate(label,(x,y),fontsize=17,fontweight='bold',ha='center',va='top',xytext=(0,-22),textcoords='offset points',color='black',zorder=6)
+        elif t=='autor':ax.scatter(x,y,c=color,s=80+10*math.log1p(w),zorder=3,edgecolors='white',linewidths=1,marker='D');ax.annotate(label,(x,y),fontsize=14,ha='center',va='center',bbox=dict(boxstyle='round,pad=0.15',facecolor='black',alpha=0.8,edgecolor=color,linewidth=0.5),color='white',zorder=4)
+        else:ax.scatter(x,y,c=color,s=60+12*math.log1p(w),zorder=3,edgecolors='white',linewidths=1);ax.annotate(label,(x,y),fontsize=13,ha='center',va='center',bbox=dict(boxstyle='round,pad=0.15',facecolor='black',alpha=0.85,edgecolor=color,linewidth=0.5),color='white',zorder=4)
     ax.axis('off');ax.set_aspect('equal',adjustable='datalim');plt.tight_layout(pad=0.3)
     buf=io.BytesIO();plt.savefig(buf,format='png',dpi=150,bbox_inches='tight',facecolor='white',edgecolor='none');plt.close(fig);buf.seek(0);return buf.read()
 
@@ -817,7 +817,7 @@ def procesar_datos(uploaded_file):
 
 def run_app():
     with st.sidebar:
-        st.markdown("### 🤖📊 PPTX JC Intelligence")
+        st.markdown("### 🗳️📊 PPTX JC Intelligence")
         st.markdown("---")
         uploaded_file = st.file_uploader("📂 Sube tu Excel", type=['xlsx','xls'])
         st.markdown("---")
@@ -830,8 +830,8 @@ def run_app():
 
     st.markdown("""
     <div style="background:linear-gradient(135deg,#8B0000,#111827);color:white;padding:28px;border-radius:14px;margin-bottom:22px">
-        <h1 style="margin:0">🤖📊 Inteligencia Electoral</h1>
-        <p style="margin:5px 0 0;opacity:0.9">Análisis de Redes y Narrativas_pptx generator_jc 🤖😺</p>
+        <h1 style="margin:0">🗳️📊 Inteligencia Electoral</h1>
+        <p style="margin:5px 0 0;opacity:0.9">Análisis de Redes y Narrativas_pptx generator_jc 🗳️😺</p>
     </div>
     """, unsafe_allow_html=True)
 
